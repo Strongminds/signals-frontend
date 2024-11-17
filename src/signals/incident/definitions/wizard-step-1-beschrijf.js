@@ -14,6 +14,7 @@ import FormComponents from '../components/form'
 import IncidentNavigation from '../components/IncidentNavigation'
 import checkVisibility from '../services/checkVisibility'
 import getStepControls from '../services/get-step-controls'
+import i18n from 'i18n'
 
 const priorityValuesList = priorityList.reduce(
   (acc, { key, value, info }) => ({ ...acc, [key]: { value, info } }),
@@ -71,9 +72,9 @@ const getControls = memoize(
       },
       description: {
         meta: {
-          label: 'Waar gaat het om?',
+          label: i18n.t('Waar gaat het om?'),
           subtitle:
-            'Typ geen persoonsgegevens in deze omschrijving. We vragen dit later in dit formulier aan u.',
+            i18n.t('Typ geen persoonsgegevens in deze omschrijving. We vragen dit later in dit formulier aan u.'),
           path: 'text',
           rows: 7,
           maxLength: 1000,
@@ -124,8 +125,8 @@ const getControls = memoize(
       },
       images: {
         meta: {
-          label: "Foto's toevoegen",
-          subtitle: 'Voeg een foto toe om de situatie te verduidelijken',
+          label: i18n.t("Foto's toevoegen"),
+          subtitle: i18n.t('Voeg een foto toe om de situatie te verduidelijken'),
           minFileSize: 30 * 2 ** 10, // 30 KiB.
           maxFileSize: 20 * 2 ** 20, // 20 MiB.
           allowedFileTypes: [
@@ -156,7 +157,7 @@ const getControls = memoize(
 )
 
 export default {
-  label: 'Beschrijf uw melding',
+  label: i18n.t('Beschrijf uw melding'),
   getNextStep: (wizard, incident) => {
     if (
       !some(getStepControls(wizard.vulaan, incident), (control) => {
@@ -170,7 +171,7 @@ export default {
     }
     return false
   },
-  nextButtonLabel: 'Volgende',
+  nextButtonLabel: i18n.t('Volgende'),
   nextButtonClass: 'action primary arrow-right',
   formFactory: (incident, sources) => getControls(sources),
 }
