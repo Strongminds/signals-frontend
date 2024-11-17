@@ -13,6 +13,7 @@ import type {
   FormMeta,
   FormOptions,
 } from 'types/reactive-form'
+import i18n from 'i18n'
 
 const StyledErrorWrapper = styled(ErrorWrapper)<{ invalid: boolean }>`
   display: flex;
@@ -98,7 +99,7 @@ const FormField = ({
           >
             <Fragment>
               {meta.label}
-              {isOptional && <Optional>(niet verplicht)</Optional>}
+              {isOptional && <Optional>({i18n.t('niet verplicht')})</Optional>}
             </Fragment>
           </StyledLabel>
         )}
@@ -115,7 +116,7 @@ const FormField = ({
                   data-testid={`${meta.name}-required`}
                   message={
                     getError('required') || getError('min')
-                      ? 'Dit is een verplicht veld'
+                      ? i18n.t('Dit is een verplicht veld')
                       : (getError('required') as string)
                   }
                 />

@@ -107,7 +107,11 @@ if (module.hot) {
   // Hot reloadable React components and translation json files
   // modules.hot.accept does not accept dynamic dependencies,
   // have to be constants at compile-time
-  module.hot.accept()
+  module.hot.accept(['../public/locales/en/translation.json'], () => {
+    i18n.reloadResources().then(() => {
+      console.log('Translations reloaded');
+    });
+  });
 }
 
 // Authenticate and start the authorization process

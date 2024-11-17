@@ -5,6 +5,7 @@ import { useFormContext } from 'react-hook-form'
 
 import { StyledErrorAlert } from './styled'
 import type { Meta } from '../../signals/incident/components/form/MapSelectors/types'
+import i18n from 'i18n'
 
 type Props = {
   meta?: Partial<Meta>
@@ -24,7 +25,7 @@ const GlobalError = ({ meta }: Props) => {
   return !isEmpty(formState?.errors) ? (
     <StyledErrorAlert>
       {label ||
-        `U hebt niet alle vragen ${invalid}beantwoord. Vul hieronder aan alstublieft.`}
+        i18n.t(`U hebt niet alle vragen ${invalid}beantwoord. Vul hieronder aan alstublieft.`)}
     </StyledErrorAlert>
   ) : null
 }

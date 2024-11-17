@@ -1,10 +1,16 @@
 {
   "Beschrijf uw melding": "Describe your report",
   "Contactgegevens": "Contact details",
-  "Foto's toevoegen": "",
+  "Dit is een verplicht veld": "This is a required field",
+  "Foto's toevoegen": "Add photos",
   "Locatie en vragen": "Location and questions",
+  "niet verplicht": "not required",
+  "tekens": "characters",
   "Typ geen persoonsgegevens in deze omschrijving. We vragen dit later in dit formulier aan u.": "Do not enter personal data in this description. We will ask for it later in this form.",
+  "U hebt niet alle vragen (juist) beantwoord. Vul hieronder aan alstublieft.": "You have not answered all the questions (correctly). Please complete the fields below.",
+  "U hebt niet alle vragen beantwoord. Vul hieronder aan alstublieft.": "You have not answered all the questions. Please complete the fields below.",
   "Versturen": "Send",
   "Voeg een foto toe om de situatie te verduidelijken": "Add a photo to describe the situation",
+  "Volgende": "Next",
   "Waar gaat het om?": "What is it about?"
 }
