@@ -1,5 +1,5 @@
 module.exports = {
-    contextSeparator: '_',
+    contextSeparator: false,
     createOldCatalogs: false,
     defaultNamespace: 'translation',
     defaultValue: '',
@@ -12,7 +12,7 @@ module.exports = {
       tsx: ['JsxLexer'],
     },
     locales: ['en', 'da'], // Add your supported locales
-    namespaceSeparator: ':',
+    namespaceSeparator: false,
     output: 'public/locales/$LOCALE/$NAMESPACE.json',
     pluralSeparator: '_',
     input: ['src/**/*.{js,jsx,ts,tsx}'],

@@ -12,9 +12,10 @@ i18n
     lng: 'da', // Default language
     ns: ['translation'],
     defaultNS: 'translation',
-    fallbackLng: '',
+    fallbackLng: 'en',
     interpolation: {
-      escapeValue: false
+      prefix: '{{',
+      suffix: '}}' // Matcher placeholder-syntax
     },
     react: {
       useSuspense: true

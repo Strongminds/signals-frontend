@@ -10,6 +10,7 @@ import styled from 'styled-components'
 import Paragraph from 'components/Paragraph/Paragraph'
 import TextAreaComponent from 'components/TextArea'
 import type { FieldProps } from 'signals/incident/containers/IncidentReplyContainer/types'
+import i18n from 'i18n'
 
 export const DEFAULT_MAX_LENGTH = 1000
 const DEFAULT_ROWS = 6
@@ -64,12 +65,12 @@ const TextArea: FunctionComponent<FieldProps> = ({
           validate: {
             required: (value: string) => {
               if (!value.trim()) {
-                return 'Dit is een verplicht veld'
+                return i18n.t('Dit is een verplicht veld')
               }
             },
           },
           maxLength: {
-            message: `U heeft meer dan de maximale ${maxLength} tekens ingevoerd`,
+            message: i18n.t('U heeft meer dan de maximale {{maxLength}} tekens ingevoerd', { maxLength }),
             value: maxLength,
           },
         })}

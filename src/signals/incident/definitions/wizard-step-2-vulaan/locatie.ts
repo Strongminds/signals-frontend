@@ -1,9 +1,11 @@
+//import i18n from 'i18n'
+import i18n from 'i18n'
 import { QuestionFieldType } from 'types/question'
 
 const locatie = {
   meta: {
     featureTypes: [],
-    label: 'Waar is het?',
+    label: i18n.t('Waar is het?'),
     language: {
       title: 'Selecteer de locatie',
       subTitle: 'Waar is het?',

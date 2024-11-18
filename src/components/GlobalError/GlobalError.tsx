@@ -24,7 +24,7 @@ const GlobalError = ({ meta }: Props) => {
 
   return !isEmpty(formState?.errors) ? (
     <StyledErrorAlert>
-      {label || i18n.t('U hebt niet alle vragen {{Invalid}}beantwoord. Vul hieronder aan alstublieft.', { Invalid: invalid }) }
+      {label || i18n.t('U hebt niet alle vragen {{invalid}}beantwoord. Vul hieronder aan alstublieft.', { invalid })}
     </StyledErrorAlert>
   ) : null
 }
