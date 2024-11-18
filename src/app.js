@@ -69,7 +69,6 @@ const render = () => {
   spinnerBackground.remove()
 
   i18n.on('loaded', () => {
-    console.log('i18n loaded:', i18n.language);
     ReactDOM.render(
       <I18nextProvider i18n={i18n}>
         <Suspense fallback={<div>Loading translations...</div>}>

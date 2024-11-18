@@ -1,16 +1,16 @@
 {
   "Beschrijf uw melding": "Beskriv din anmeldelse",
   "Contactgegevens": "Kontaktoplysninger",
-  "Dit is een verplicht veld": "",
+  "Dit is een verplicht veld": "Dette er et påkrævet felt",
   "Foto's toevoegen": "Tilføj billeder",
-  "Locatie en vragen": "",
-  "niet verplicht": "",
-  "tekens": "karakterery",
-  "Typ geen persoonsgegevens in deze omschrijving. We vragen dit later in dit formulier aan u.": "",
-  "U hebt niet alle vragen (juist) beantwoord. Vul hieronder aan alstublieft.": "",
-  "U hebt niet alle vragen beantwoord. Vul hieronder aan alstublieft.": "",
+  "Locatie en vragen": "Placering og spørgsmål",
+  "niet verplicht": "Ikke påkrævet",
+  "tekens": "karakterer",
+  "Typ geen persoonsgegevens in deze omschrijving. We vragen dit later in dit formulier aan u.": "Du behøver ikke indtaste personoplysninger i beskrivelsen. Vi spørger til dig senere.",
+  "U hebt niet alle vragen (juist) beantwoord. Vul hieronder aan alstublieft.": "Du har ikke besvaret alle spørgsmål fyldestgørende. Udfyld venligst de manglende informationer",
+  "U hebt niet alle vragen beantwoord. Vul hieronder aan alstublieft.": "Du har ikke besvaret alle spørgsmål. Udfyld venligst felterne nedenfor.",
   "Versturen": "Send",
-  "Voeg een foto toe om de situatie te verduidelijken": "",
-  "Volgende": "",
-  "Waar gaat het om?": ""
+  "Voeg een foto toe om de situatie te verduidelijken": "Tilføj et foto for at beskrive situationen",
+  "Volgende": "Næste",
+  "Waar gaat het om?": "Hvad handler det om?"
 }
