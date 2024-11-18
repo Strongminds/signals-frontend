@@ -1,12 +1,11 @@
 // SPDX-License-Identifier: MPL-2.0
 // Copyright (C) 2020 - 2022 Gemeente Amsterdam
 import memoize from 'lodash/memoize'
-
 import configuration from 'shared/services/configuration/configuration'
-
 import FormComponents from '../../components/form'
 import step2 from '../wizard-step-2-vulaan'
 import location from '../wizard-step-2-vulaan/locatie'
+import i18n from 'i18n'
 
 const { formFactory } = step2
 const defaultControls = {
@@ -15,8 +14,8 @@ const defaultControls = {
   help_text: expect.objectContaining({
     meta: {
       ignoreVisibility: true,
-      label: configuration.language.helpTextHeader,
-      value: configuration.language.helpText,
+      label: i18n.t("Lukt het niet om een melding te doen? Bel het telefoonnummer +4500000000"),
+      value: i18n.t("Wij zijn bereikbaar van maandag tot en met vrijdag van 08.00 tot 18.00 uur."),
     },
   }),
 }

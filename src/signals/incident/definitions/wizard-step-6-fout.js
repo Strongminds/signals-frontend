@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MPL-2.0
 // Copyright (C) 2018 - 2021 Gemeente Amsterdam
 import configuration from 'shared/services/configuration/configuration'
-
 import FormComponents from '../components/form'
 import IncidentNavigation from '../components/IncidentNavigation'
+import i18n from 'i18n'
 
 export default {
   label: 'Fout',
@@ -31,8 +31,8 @@ ${configuration.language?.urgentContactInfo}`,
       },
       help_text: {
         meta: {
-          label: configuration.language.helpTextHeader,
-          value: configuration.language.helpText,
+          label: i18n.t("Lukt het niet om een melding te doen? Bel het telefoonnummer +4500000000"),
+          value: i18n.t("Wij zijn bereikbaar van maandag tot en met vrijdag van 08.00 tot 18.00 uur."),
         },
         render: FormComponents.PlainText,
       },

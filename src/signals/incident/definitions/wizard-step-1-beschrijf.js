@@ -145,8 +145,8 @@ const getControls = memoize(
       },
       help_text: {
         meta: {
-          label: configuration.language.helpTextHeader,
-          value: configuration.language.helpText,
+          label: i18n.t("Lukt het niet om een melding te doen? Bel het telefoonnummer +4500000000"),
+          value: i18n.t("Wij zijn bereikbaar van maandag tot en met vrijdag van 08.00 tot 18.00 uur."),
           ignoreVisibility: true,
         },
         render: FormComponents.PlainText,

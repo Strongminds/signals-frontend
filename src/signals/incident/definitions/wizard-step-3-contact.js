@@ -5,6 +5,7 @@ import configuration from 'shared/services/configuration/configuration'
 import FormComponents from '../components/form'
 import IncidentNavigation from '../components/IncidentNavigation'
 import { validatePhoneNumber } from '../services/custom-validators/custom-validators'
+import i18n from 'i18n'
 
 export default {
   label: 'Contactgegevens',
@@ -68,8 +69,8 @@ export default {
       },
       sharing_allowed: {
         meta: {
-          shortLabel: 'Toestemming contactgegevens delen',
-          value: configuration.language?.consentToContactSharing,
+          shortLabel: i18n.t('Toestemming contactgegevens delen'),
+          value: i18n.t("Ja, ik geef de gemeente toestemming om mijn melding door te sturen naar andere organisaties als de melding niet voor de gemeente is bestemd."),
           path: 'reporter.sharing_allowed',
         },
         render: FormComponents.EmphasisCheckboxInput,
@@ -80,8 +81,8 @@ export default {
       },
       help_text: {
         meta: {
-          label: configuration.language.helpTextHeader,
-          value: configuration.language.helpText,
+          label: i18n.t("Lukt het niet om een melding te doen? Bel het telefoonnummer +4500000000"),
+          value: i18n.t("Wij zijn bereikbaar van maandag tot en met vrijdag van 08.00 tot 18.00 uur."),
           ignoreVisibility: true,
         },
         render: FormComponents.PlainText,

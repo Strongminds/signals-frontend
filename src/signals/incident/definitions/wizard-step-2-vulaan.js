@@ -27,6 +27,7 @@ import wegenVerkeerStraatmeubilair from './wizard-step-2-vulaan/wegen-verkeer-st
 import wonen from './wizard-step-2-vulaan/wonen'
 import FormComponents from '../components/form'
 import IncidentNavigation from '../components/IncidentNavigation'
+import i18n from 'i18n'
 
 const mapFieldNameToComponent = (key) => FormComponents[key]
 
@@ -74,8 +75,8 @@ const expandQuestions = memoize(
       },
       help_text: {
         meta: {
-          label: configuration.language.helpTextHeader,
-          value: configuration.language.helpText,
+          label: i18n.t("Lukt het niet om een melding te doen? Bel het telefoonnummer +4500000000"),
+          value: i18n.t("Wij zijn bereikbaar van maandag tot en met vrijdag van 08.00 tot 18.00 uur."),
           ignoreVisibility: true,
         },
         render: FormComponents.PlainText,

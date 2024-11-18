@@ -1,16 +1,23 @@
 {
+  "(juist)": "correct",
   "Beschrijf uw melding": "Describe your report",
   "Contactgegevens": "Contact details",
+  "custom": "custom",
   "Dit is een verplicht veld": "This is a required field",
   "Foto's toevoegen": "Add photos",
+  "Ja, ik geef de gemeente toestemming om mijn melding door te sturen naar andere organisaties als de melding niet voor de gemeente is bestemd.": "Yes, I give the municipality of Amsterdam permission to forward my report to other organizations if the report is not intended for the municipality.",
   "Locatie en vragen": "Location and questions",
+  "Lukt het niet om een melding te doen? Bel het telefoonnummer +4500000000": "Having trouble submitting a report? Call the phone number +4500000000.",
   "niet verplicht": "not required",
   "tekens": "characters",
+  "Toestemming contactgegevens delen": "Consent to share contact details",
   "Typ geen persoonsgegevens in deze omschrijving. We vragen dit later in dit formulier aan u.": "Do not enter personal data in this description. We will ask for it later in this form.",
   "U hebt niet alle vragen (juist) beantwoord. Vul hieronder aan alstublieft.": "You have not answered all the questions (correctly). Please complete the fields below.",
+  "U hebt niet alle vragen {{Invalid}}beantwoord. Vul hieronder aan alstublieft.": "You have not answered all the questions {{Invalid}}. Please complete the fields below.",
   "U hebt niet alle vragen beantwoord. Vul hieronder aan alstublieft.": "You have not answered all the questions. Please complete the fields below.",
   "Versturen": "Send",
   "Voeg een foto toe om de situatie te verduidelijken": "Add a photo to describe the situation",
   "Volgende": "Next",
-  "Waar gaat het om?": "What is it about?"
+  "Waar gaat het om?": "What is it about?",
+  "Wij zijn bereikbaar van maandag tot en met vrijdag van 08.00 tot 18.00 uur.": "We are available Monday through Friday from 8:00 AM to 6:00 PM."
 }
