@@ -38,7 +38,9 @@
     "update-minor": "npm-check-updates --target minor --upgrade && npm install",
     "validate-config": "node ./internals/scripts/validate-config.js",
     "validate-base-config": "node ./internals/scripts/validate-base-config.js",
-    "i18n": "i18next"
+    "i18n": "i18next",
+    "watch:locales": "chokidar 'public/locales/**/*.json' -c 'npx ts-node internals/scripts/reload-i18n.ts'",
+    "reload-i18n": "node internals/scripts/reload-i18n.js"
   },
   "dependencies": {
     "@amsterdam/arm-core": "^1.0.0",
@@ -128,6 +130,7 @@
     "babel-plugin-styled-components": "^1.13.3",
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
     "chalk": "^4.1.2",
+    "chokidar-cli": "^3.0.0",
     "circular-dependency-plugin": "^5.2.2",
     "compression-webpack-plugin": "^11.1.0",
     "copy-webpack-plugin": "^12.0.2",
