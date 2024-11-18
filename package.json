@@ -25,6 +25,7 @@
     "lint:find-rules": "eslint-find-rules -dun .eslintrc.json",
     "lint": "npm run lint:js",
     "preanalyze": "npm run analyze:clean",
+    "preinstall": "npm-force-resolutions",
     "prepare": "husky",
     "pretest": "npm run test:clean",
     "prestart:prod": "npm run build",
@@ -175,6 +176,7 @@
     "msw": "2.4.3",
     "node-plop": "^0.32.0",
     "npm-check-updates": "^17.1.8",
+    "npm-force-resolutions": "^0.0.10",
     "prettier": "^2.8.8",
     "prop-types": "^15.8.1",
     "redux-devtools-extension": "^2.13.9",
@@ -190,6 +192,9 @@
     "webpack-bundle-analyzer": "^4.10.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.2"
+  },
+  "overrides": { 
+    "cheerio": "1.0.0-rc.3" 
   },
   "private": true
 }
