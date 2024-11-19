@@ -5,15 +5,14 @@ import { QuestionFieldType } from 'types/question'
 const locatie = {
   meta: {
     featureTypes: [],
-    label: i18n.t('Waar is het?'),
+    label: i18n.t('waar-is-het'),
     language: {
-      title: 'Selecteer de locatie',
-      subTitle: 'Waar is het?',
-      description:
-        'Typ het dichtstbijzijnde adres, klik de locatie aan op de kaart of gebruik "Mijn locatie"',
-      submit: 'Bevestigen',
+      title: i18n.t('Selecteer de locatie'),
+      subTitle: i18n.t('waar-is-het'),
+      description: i18n.t('typ-het-dichtstbijzijnde-adres-klik-de-locatie-aan'),
+      submit: i18n.t('bevestigen'),
     },
-    shortLabel: 'Waar is het?',
+    shortLabel: i18n.t('waar-is-het'),
   },
   render: QuestionFieldType.LocationSelect,
   options: {
