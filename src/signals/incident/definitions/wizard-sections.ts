@@ -8,10 +8,10 @@ import fout from './wizard-step-6-fout'
 import i18n from 'i18n'
 
 export default function getWizardSections(): WizardSection {
-  const section1Title = i18n.t('Beschrijf uw melding')
-  const section2Title = i18n.t('Locatie en vragen')
-  const section3Title = i18n.t('Contactgegevens')
-  const section4Title = i18n.t('Versturen')
+  const section1Title = i18n.t('beschrijf-uw-melding')
+  const section2Title = i18n.t('locatie-en-vragen')
+  const section3Title = i18n.t('contactgegevens')
+  const section4Title = i18n.t('versturen')
   return {
     beschrijf: {
       stepLabel: section1Title,

@@ -128,10 +128,10 @@ const DetailPanel: FC<DetailPanelProps> = ({ language, zoomLevel }) => {
           {!shouldRenderMobileVersion && (
             <>
               <StyledParagraphPDOkAutoSuggest>
-                {language?.title || i18n.t('Selecteer de locatie')}
+                {language?.title || i18n.t('selecteer-de-locatie')}
                 <Description>
                   {language?.description ||
-                    'Typ het dichtstbijzijnde adres, klik de locatie aan op de kaart of gebruik "Mijn locatie"'}
+                    i18n.t('typ-het-dichtstbijzijnde-adres-klik-de-locatie-aan')}
                 </Description>
               </StyledParagraphPDOkAutoSuggest>
               <StyledLabelPDOkAutoSuggest htmlFor="location">

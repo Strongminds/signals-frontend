@@ -99,7 +99,7 @@ const FormField = ({
           >
             <Fragment>
               {meta.label}
-              {isOptional && <Optional>({i18n.t('niet verplicht')})</Optional>}
+              {isOptional && <Optional>{i18n.t('niet-verplicht')}</Optional>}
             </Fragment>
           </StyledLabel>
         )}
@@ -116,7 +116,7 @@ const FormField = ({
                   data-testid={`${meta.name}-required`}
                   message={
                     getError('required') || getError('min')
-                      ? i18n.t('Dit is een verplicht veld')
+                      ? i18n.t('dit-is-een-verplicht-veld')
                       : (getError('required') as string)
                   }
                 />
@@ -125,19 +125,14 @@ const FormField = ({
               {hasError('email') && (
                 <ErrorMessage
                   data-testid="invalid-mail"
-                  message={i18n.t('Vul een geldig e-mailadres in, met een @ en een domeinnaam. Bijvoorbeeld: {{example}}', {
-                    example: 'naam@domein.nl'
-                  })}
+                  message={i18n.t('vul-een-geldig-e-mailadres-in-met-een-en-een-domei')}
                 />
               )}
 
               {hasError('max') && (
                 <ErrorMessage
-                  message={i18n.t('U heeft meer dan de maximale {{count}} tekens ingevoerd', {
-                    count: (getError('max') as { requiredLength: number }).requiredLength,
-                  })}
+                  message={i18n.t('u-heeft-meer-dan-de-maximale-string-geterror-max-a')}
                 />
-
               )}
 
               {hasError('custom') && (

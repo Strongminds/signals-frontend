@@ -102,7 +102,7 @@ const GPSButton: FunctionComponent<GPSButtonProps & HTMLProps<HTMLElement>> = ({
       type="button"
       variant="blank"
     >
-      {i18n.t('Mijn locatie')}
+      {i18n.t('mijn-locatie')}
     </StyledButton>
   )
 }

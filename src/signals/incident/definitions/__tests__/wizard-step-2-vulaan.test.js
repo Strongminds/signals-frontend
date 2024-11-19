@@ -14,8 +14,8 @@ const defaultControls = {
   help_text: expect.objectContaining({
     meta: {
       ignoreVisibility: true,
-      label: i18n.t("Lukt het niet om een melding te doen? Bel het telefoonnummer +4500000000"),
-      value: i18n.t("Wij zijn bereikbaar van maandag tot en met vrijdag van 08.00 tot 18.00 uur."),
+      label: i18n.t('lukt-het-niet-om-een-melding-te-doen-bel-het-telef'),
+      value: i18n.t('wij-zijn-bereikbaar-van-maandag-tot-en-met-vrijdag'),
     },
   }),
 }

@@ -7,7 +7,7 @@ const locatie = {
     featureTypes: [],
     label: i18n.t('waar-is-het'),
     language: {
-      title: i18n.t('Selecteer de locatie'),
+      title: i18n.t('selecteer-de-locatie'),
       subTitle: i18n.t('waar-is-het'),
       description: i18n.t('typ-het-dichtstbijzijnde-adres-klik-de-locatie-aan'),
       submit: i18n.t('bevestigen'),

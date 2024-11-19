@@ -75,8 +75,8 @@ const expandQuestions = memoize(
       },
       help_text: {
         meta: {
-          label: i18n.t("Lukt het niet om een melding te doen? Bel het telefoonnummer +4500000000"),
-          value: i18n.t("Wij zijn bereikbaar van maandag tot en met vrijdag van 08.00 tot 18.00 uur."),
+          label: i18n.t('lukt-het-niet-om-een-melding-te-doen-bel-het-telef'),
+          value: i18n.t('wij-zijn-bereikbaar-van-maandag-tot-en-met-vrijdag'),
           ignoreVisibility: true,
         },
         render: FormComponents.PlainText,
@@ -89,10 +89,10 @@ const expandQuestions = memoize(
 const fallback = expandQuestions({ locatie })
 
 export default {
-  label: i18n.t('Locatie en vragen'),
-  nextButtonLabel: i18n.t('Volgende'),
+  label: i18n.t('locatie-en-vragen'),
+  nextButtonLabel: i18n.t('volgende'),
   nextButtonClass: 'action primary arrow-right',
-  previousButtonLabel: i18n.t('Vorige'),
+  previousButtonLabel: i18n.t('vorige'),
   previousButtonClass: 'action startagain',
   formAction: 'UPDATE_INCIDENT',
   formFactory: ({ category, subcategory, questions }) => {

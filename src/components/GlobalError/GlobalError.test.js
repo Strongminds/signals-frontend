@@ -8,9 +8,9 @@ import i18n from 'i18next'
 
 import GlobalError from './index'
 
-const defaultErrorMessage = `${i18n.t('U hebt niet alle vragen beantwoord. Vul hieronder aan alstublieft.')}`
+const defaultErrorMessage = `${i18n.t('u-hebt-niet-alle-vragen-beantwoord-vul-hieronder-a')}`
 
-const invalidErrorMessage = `${i18n.t('U hebt niet alle vragen (juist) beantwoord. Vul hieronder aan alstublieft.')}`
+const invalidErrorMessage = `${i18n.t('u-hebt-niet-alle-vragen-juist-beantwoord-vul-hiero')}`
 
 jest.mock('react-hook-form', () => ({
   ...jest.requireActual('react-hook-form'),

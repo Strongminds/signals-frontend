@@ -22,7 +22,7 @@ jest.mock('lodash/memoize', () => ({
 
 const expectedLocation = {
   locatie: {
-    label: i18n.t('Waar is het?'),
+    label: i18n.t('waar-is-het'),
     optional: true,
     render: expect.any(Function),
     canBeNull: false,

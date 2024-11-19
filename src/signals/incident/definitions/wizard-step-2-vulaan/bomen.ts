@@ -22,7 +22,7 @@ const configuration = appConfiguration as unknown as typeof ConfigurationType
 export const controls = {
   extra_bomen: {
     meta: {
-      label: i18n.t('Waar is het?'),
+      label: i18n.t('waar-is-het'),
       language: {
         title: 'Selecteer de boom',
         subTitle: 'Kies een boom op de kaart',

@@ -70,7 +70,7 @@ const Intro = () => {
           onClick={() => dispatch(showMap())}
           variant="primary"
         >
-          {i18n.t('Kies locatie')}
+          {i18n.t('kies-locatie')}
         </Button>
       </ButtonBar>
     </Wrapper>
