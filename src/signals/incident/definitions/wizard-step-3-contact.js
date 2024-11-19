@@ -8,10 +8,10 @@ import { validatePhoneNumber } from '../services/custom-validators/custom-valida
 import i18n from 'i18n'
 
 export default {
-  label: 'Contactgegevens',
-  nextButtonLabel: 'Volgende',
+  label: i18n.t('contactgegevens'),
+  nextButtonLabel: i18n.t('volgende'),
   nextButtonClass: 'action primary arrow-right',
-  previousButtonLabel: 'Vorige',
+  previousButtonLabel: i18n.t('vorige'),
   previousButtonClass: 'action startagain',
   formAction: 'UPDATE_INCIDENT',
   form: {
@@ -19,10 +19,8 @@ export default {
       phone_email_text: {
         meta: {
           type: 'message',
-          heading:
-            'Mogen we u bellen voor vragen? En op de  hoogte houden via e-mail?',
-          value: `Vaak hebben we nog een vraag. Daarmee kunnen we het probleem sneller of beter oplossen. Of we willen iets uitleggen. Wij willen u dan graag even bellen. Of anders e-mailen wij u.
-            \n Wij gebruiken uw telefoonnummer en e-mailadres alléén voor deze melding.`,
+          heading: i18n.t('mogen-we-u-bellen-voor-vragen-en-op-de-hoogte-houd'),
+          value: i18n.t('vaak-hebben-we-nog-een-vraag-daarmee-kunnen-we-het'),
           wrappedComponent: FormComponents.PlainText,
         },
         render: FormComponents.WithHeading,
@@ -32,7 +30,7 @@ export default {
           // https://bytes.grubhub.com/disabling-safari-autofill-for-a-single-line-address-input-b83137b5b1c7
           autoComplete: 'search_tel',
           autoRemove: /[^\d ()+-]/g,
-          label: 'Wat is uw telefoonnummer?',
+          label: i18n.t('wat-is-uw-telefoonnummer'),
           path: 'reporter.phone',
           subtitle: '',
           type: 'tel',
@@ -47,7 +45,7 @@ export default {
         meta: {
           autoComplete: 'search_email',
           autoRemove: /[^\w!#$%&'*+./;=?@^`{|}~-]/g,
-          label: 'Wat is uw e-mailadres?',
+          label: i18n.t('wat-is-uw-e-mailadres'),
           path: 'reporter.email',
           subtitle: '',
           type: 'email',
@@ -60,17 +58,16 @@ export default {
       privacy_text: {
         meta: {
           type: 'message',
-          heading: 'Mogen we uw melding doorsturen?',
-          value:
-            'Soms kan de gemeente niets doen. Een andere organisatie moet dan aan het werk. Als dat zo is kunnen wij uw melding soms doorsturen. Wij sturen uw telefoonnummer of e-mailadres mee. Maar dat doen we alleen als u dat goed vindt.',
+          heading: i18n.t('mogen-we-uw-melding-doorsturen'),
+          value: i18n.t('soms-kan-de-gemeente-niets-doen-een-andere-organis'),
           wrappedComponent: FormComponents.PlainText,
         },
         render: FormComponents.WithHeading,
       },
       sharing_allowed: {
         meta: {
-          shortLabel: i18n.t('Toestemming contactgegevens delen'),
-          value: i18n.t("Ja, ik geef de gemeente toestemming om mijn melding door te sturen naar andere organisaties als de melding niet voor de gemeente is bestemd."),
+          shortLabel: i18n.t('toestemming-contactgegevens-delen'),
+          value: i18n.t('ja-ik-geef-de-gemeente-toestemming-om-mijn-melding'),
           path: 'reporter.sharing_allowed',
         },
         render: FormComponents.EmphasisCheckboxInput,
@@ -81,8 +78,8 @@ export default {
       },
       help_text: {
         meta: {
-          label: i18n.t("Lukt het niet om een melding te doen? Bel het telefoonnummer +4500000000"),
-          value: i18n.t("Wij zijn bereikbaar van maandag tot en met vrijdag van 08.00 tot 18.00 uur."),
+          label: i18n.t('lukt-het-niet-om-een-melding-te-doen-bel-het-telef'),
+          value: i18n.t('wij-zijn-bereikbaar-van-maandag-tot-en-met-vrijdag'),
           ignoreVisibility: true,
         },
         render: FormComponents.PlainText,
