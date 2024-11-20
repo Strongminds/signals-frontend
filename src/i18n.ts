@@ -9,7 +9,7 @@ i18n
     backend: {
       loadPath: '/locales/{{lng}}/{{ns}}.json',
     },
-    lng: 'en', // Default language
+    lng: 'da', // Default language
     ns: ['translation'],
     defaultNS: 'translation',
     fallbackLng: 'en',
