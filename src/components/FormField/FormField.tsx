@@ -131,7 +131,7 @@ const FormField = ({
 
               {hasError('max') && (
                 <ErrorMessage
-                  message={i18n.t('u-heeft-meer-dan-de-maximale-string-geterror-max-a')}
+                  message={i18n.t('u-heeft-meer-dan-de-maximale-string-geterror-max-a', { requiredLength: getError('max') })}
                 />
               )}
 

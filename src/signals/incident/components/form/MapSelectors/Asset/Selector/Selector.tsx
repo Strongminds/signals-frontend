@@ -173,11 +173,11 @@ const Selector: FC = () => {
 
   useEffect(() => {
     if (maxAssetWarning) {
-      const number =
+      const numberStr =
         maxNumberOfAssets === 1
           ? meta?.language?.objectTypeSingular || 'object'
           : meta?.language?.objectTypePlural || 'objecten'
-      setMapMessage(i18n.t('u-kunt-maximaal-maxnumberofassets-number-kiezen', { maxNumberOfAssets, number }))
+      setMapMessage(i18n.t('u-kunt-maximaal-maxnumberofassets-number-kiezen', { maxNumberOfAssets, numberStr }))
     }
   }, [
     maxAssetWarning,

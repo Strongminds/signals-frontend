@@ -70,7 +70,7 @@ const TextArea: FunctionComponent<FieldProps> = ({
             },
           },
           maxLength: {
-            message: i18n.t('u-heeft-meer-dan-de-maximale-maxlength-tekens-inge', { maxLength }),
+            message: i18n.t('u-heeft-meer-dan-de-maximale-maxlength-tekens-inge', { maxLength: maxLength }),
             value: maxLength,
           },
         })}
