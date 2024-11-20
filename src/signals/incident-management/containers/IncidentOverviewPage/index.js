@@ -61,6 +61,7 @@ import {
 import useRestoreScrollPosition from '../../../../hooks/useRestoreScrollPosition'
 import { MAP_URL } from '../../routes'
 import FilterTagList from '../FilterTagList/FilterTagList'
+import i18n from 'i18n'
 
 let lastActiveElement = null
 
@@ -218,7 +219,7 @@ export const IncidentOverviewPageContainerComponent = ({
               }
               $disabled={disableFiltersAndSorting}
             >
-              Mijn filters
+              {i18n.t('mijn-filters')}
             </StyledButton>
 
             <StyledButton
@@ -229,7 +230,7 @@ export const IncidentOverviewPageContainerComponent = ({
               }
               $disabled={disableFiltersAndSorting}
             >
-              Filter
+              {i18n.t('filter')}
             </StyledButton>
           </ButtonWrapper>
         </TitleRow>
@@ -239,7 +240,7 @@ export const IncidentOverviewPageContainerComponent = ({
             data-testid="my-filters-modal"
             onClose={closeMyFiltersModal}
             isOpen
-            title="Mijn filters"
+            title={i18n.t('mijn-filters')}
           >
             <MyFilters onClose={closeMyFiltersModal} />
           </Modal>
@@ -250,7 +251,7 @@ export const IncidentOverviewPageContainerComponent = ({
             data-testid="filter-modal"
             isOpen
             onClose={closeFilterModal}
-            title="Filters"
+            title={i18n.t('filters')}
           >
             <Filter onSubmit={closeFilterModal} onCancel={closeFilterModal} />
           </Modal>
