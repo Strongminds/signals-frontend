@@ -105,7 +105,7 @@ export const IncidentOverviewPageContainerComponent = ({
     if (errorMessage) {
       dispatch(
         showGlobalNotification({
-          title: 'Let op, het sorteren is niet gelukt',
+          title: i18n.t('let-op-het-sorteren-is-niet-gelukt'),
           message: errorMessage,
           variant: VARIANT_ERROR,
           type: TYPE_LOCAL,
@@ -118,9 +118,8 @@ export const IncidentOverviewPageContainerComponent = ({
     dispatch(
       showGlobalNotification({
         variant: VARIANT_NOTICE,
-        title:
-          'Verwijder eerst uw zoekopdracht om de filteropties te gebruiken',
-        message: 'Daarna kunt u de filteropties gebruiken',
+        title: i18n.t('verwijder-eerst-uw-zoekopdracht-om-de-filteropties-te-gebruiken'),
+        message: i18n.t('daarna-kunt-u-de-filteropties-gebruiken'),
         type: TYPE_GLOBAL,
       })
     )
@@ -310,7 +309,7 @@ export const IncidentOverviewPageContainerComponent = ({
               />
             )}
 
-            {count === 0 && <NoResults>Geen meldingen</NoResults>}
+            {count === 0 && <NoResults>{i18n.t('geen-meldingen')}</NoResults>}
           </Column>
 
           <PaginationWrapper>{pagination}</PaginationWrapper>
