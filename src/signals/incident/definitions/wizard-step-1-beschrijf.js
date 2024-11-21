@@ -63,7 +63,7 @@ const getControls = memoize(
           path: 'source',
           values: sources ? reduceSources(selectableSources(sources)) : [],
           name: 'source',
-          value: configuration.featureFlags.appMode ? 'app' : 'online',
+          value: configuration.featureFlags.appMode ? i18n.t('aanvraag') : i18n.t('online'),
         },
         options: {
           validators: ['required'],
