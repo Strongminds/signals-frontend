@@ -197,7 +197,7 @@ export const Contact = ({ incident, showPhone }: Props) => {
         <dd data-testid="detail-email-value">
           {`${incident.reporter.email}`}
           {emailChanged && configuration.featureFlags.showContactEdit
-            ? i18n.t('verificatie-verzonden')
+            ? '(' + i18n.t('verificatie-verzonden') + ')'
             : ''}
 
           {configuration.featureFlags.showContactEdit &&
