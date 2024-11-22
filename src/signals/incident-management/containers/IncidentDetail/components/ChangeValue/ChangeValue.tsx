@@ -217,9 +217,7 @@ const ChangeValue: FunctionComponent<ChangeValueProps> = ({
 
       <ButtonBar>
         <SaveButton
-          data-testid={`submit${type.charAt(0).toUpperCase()}${type.slice(
-            1
-          )}Button`}
+          data-testid={`submit${type.charAt(0).toUpperCase()}${type.slice(1)}Button`}
           variant="secondary"
           type="submit"
         >
@@ -227,9 +225,7 @@ const ChangeValue: FunctionComponent<ChangeValueProps> = ({
         </SaveButton>
 
         <Button
-          data-testid={`cancel${type.charAt(0).toUpperCase()}${type.slice(
-            1
-          )}Button`}
+          data-testid={`cancel${type.charAt(0).toUpperCase()}${type.slice(1)}Button`}
           variant="tertiary"
           type="button"
           onClick={handleCancel}
@@ -256,9 +252,7 @@ const ChangeValue: FunctionComponent<ChangeValueProps> = ({
         {!showForm && (
           <EditButton
             className=""
-            data-testid={`edit${type.charAt(0).toUpperCase()}${type.slice(
-              1
-            )}Button`}
+            data-testid={`edit${type.charAt(0).toUpperCase()}${type.slice(1)}Button`}
             disabled={disabled}
             onClick={onShowForm}
           />
