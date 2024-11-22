@@ -19,6 +19,7 @@ import type { Priority } from 'signals/incident-management/definitions/types'
 
 import IncidentDetailContext from '../../context'
 import EditButton from '../EditButton'
+import i18n from 'i18n'
 
 const DisplayValue = styled.span<{ hasHighPriority: boolean }>`
   color: ${({ hasHighPriority, theme }) =>
@@ -222,7 +223,7 @@ const ChangeValue: FunctionComponent<ChangeValueProps> = ({
           variant="secondary"
           type="submit"
         >
-          Opslaan
+          {i18n.t('opslaan')}
         </SaveButton>
 
         <Button
@@ -233,7 +234,7 @@ const ChangeValue: FunctionComponent<ChangeValueProps> = ({
           type="button"
           onClick={handleCancel}
         >
-          Annuleer
+          {i18n.t('annuleer')}
         </Button>
       </ButtonBar>
     </form>
