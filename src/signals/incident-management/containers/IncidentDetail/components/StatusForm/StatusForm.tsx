@@ -256,8 +256,7 @@ const StatusForm: FunctionComponent<StatusFormProps> = ({
     if (emailTemplateError) {
       storeDispatch(
         showGlobalNotification({
-          title:
-            'Er is geen email template beschikbaar voor de gegeven statustransitie',
+          title: i18n.t('er-is-geen-email-template-beschikbaar-voor-de-gegeven-statustransitie-0'),
           variant: VARIANT_ERROR,
           type: TYPE_LOCAL,
         })
