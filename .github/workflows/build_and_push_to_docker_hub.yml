@@ -1,6 +1,12 @@
 name: Build Docker image and push to Docker Hub
 
 on:
+  workflow_call:
+    inputs:
+      DOCKERHUB_USERNAME:
+        required: true
+      DOCKERHUB_PASSWORD:
+        required: true
   release:
     types: [ published ]
 
