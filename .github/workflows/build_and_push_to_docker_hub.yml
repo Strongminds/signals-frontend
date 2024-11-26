@@ -5,8 +5,10 @@ on:
     inputs:
       DOCKERHUB_USERNAME:
         required: true
+        type: string
       DOCKERHUB_PASSWORD:
         required: true
+        type: string
   release:
     types: [ published ]
 
