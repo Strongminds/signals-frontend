@@ -132,8 +132,7 @@ const productionConfig = /** @type { import('webpack').Configuration } */ {
     new CopyPlugin({
       patterns: [
         {
-          from: path.resolve(__rootdir, 'public'), // Source directory
-          to: path.resolve(__rootdir, 'build'), // Destination directory relative to webpack output path
+          from: path.resolve(__rootdir, 'public/locales'), to: 'build/locales'
         },
       ],
     }),
