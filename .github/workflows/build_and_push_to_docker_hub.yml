@@ -6,6 +6,9 @@ on:
       release_tag:
         required: true
         type: string
+      SUB_TREE_PATH:
+        required: true
+        type: string
     secrets:
       DOCKERHUB_USERNAME:
         required: true
@@ -29,13 +32,17 @@ jobs:
         run: echo "${{ inputs.release_tag }}"
 
       - name: Build the release Docker image
+        working-directory: ${{ inputs.SUB_TREE_PATH }}
         run: |
-          docker build --build-arg FRONTEND_TAG=${{ inputs.release_tag }} -t signalen/frontend:${{ inputs.release_tag }} .
+          docker build --build-arg FRONTEND_TAG=${{ inputs.release_tag }} -t strongminds/signalen/frontend:${{ inputs.release_tag }} .
+          
       - name: Build the latest Docker image
+        working-directory: ${{ inputs.SUB_TREE_PATH }}
         run: |
-          docker build -t signalen/frontend:latest .
+          docker build -t strongminds/signalen/frontend:latest .
+          
       - name: Push the tagged image to Docker
-        run: docker push signalen/frontend:${{ inputs.release_tag }}
+        run: docker push strongminds/signalen/frontend:${{ inputs.release_tag }}
 
       - name: Push the latest image to Docker
-        run: docker push signalen/frontend:latest
+        run: docker push strongminds/signalen/frontend:latest
