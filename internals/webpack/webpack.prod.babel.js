@@ -133,7 +133,7 @@ const productionConfig = /** @type { import('webpack').Configuration } */ {
       patterns: [
         {
           from: path.resolve(__rootdir, 'public'), // Source directory
-          to: '.', // Destination directory relative to webpack output path
+          to: path.resolve(__rootdir, 'build'), // Destination directory relative to webpack output path
         },
       ],
     }),
