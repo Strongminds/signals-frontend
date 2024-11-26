@@ -83,6 +83,7 @@
     "reselect": "^5.1.1",
     "scroll-lock": "^2.1.5",
     "styled-components": "^5.3.11",
+    "svgo": "^3.3.2",
     "whatwg-fetch": "^3.6.20",
     "yup": "^1.4.0"
   },
@@ -193,8 +194,8 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.2"
   },
-  "overrides": { 
-    "cheerio": "1.0.0-rc.3" 
+  "overrides": {
+    "cheerio": "1.0.0-rc.3"
   },
   "private": true
 }
