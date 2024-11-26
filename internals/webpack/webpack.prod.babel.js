@@ -128,6 +128,15 @@ const productionConfig = /** @type { import('webpack').Configuration } */ {
         },
       ],
     }),
+
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__rootdir, 'public'), // Source directory
+          to: '.', // Destination directory relative to webpack output path
+        },
+      ],
+    }),
   ],
 
   performance: {
