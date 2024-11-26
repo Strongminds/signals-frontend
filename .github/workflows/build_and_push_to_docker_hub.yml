@@ -1,6 +1,11 @@
 name: Build Docker image and push to Docker Hub
 
 on:
+  workflow_call:
+    inputs:
+      FRONTEND_IMAGE_NAME:
+        required: false
+        type: string
   release:
     types: [ published ]
 
