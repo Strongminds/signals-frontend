@@ -6,8 +6,8 @@ import IncidentNavigation from '../components/IncidentNavigation'
 import i18n from 'i18n'
 
 export default {
-  label: 'Fout',
-  previousButtonLabel: 'Vorige',
+  label: i18n.t('fout'),
+  previousButtonLabel: i18n.t('vorige'),
   previousButtonClass: 'action startagain',
   formAction: 'UPDATE_INCIDENT',
   form: {
@@ -16,12 +16,9 @@ export default {
         meta: {
           className: 'col-sm-12 col-md-6',
           label:
-            'Momenteel zijn er problemen met deze website en kan uw melding niet verwerkt worden.',
+            i18n.t('momenteel-zijn-er-problemen-met-deze-website-en-kan-uw-melding-niet-verwerk'),
           type: 'bedankt',
-          value: `
-Probeert u het later nogmaals.
-
-${configuration.language?.urgentContactInfo}`,
+          value: i18n.t('probeert-u-het-later-nogmaals') + `${configuration.language?.urgentContactInfo}`,
         },
         render: FormComponents.PlainText,
       },
@@ -31,10 +28,10 @@ ${configuration.language?.urgentContactInfo}`,
       },
       help_text: {
         meta: {
-          label: i18n.t("Lukt het niet om een melding te doen? Bel het telefoonnummer +4500000000"),
-          value: i18n.t("Wij zijn bereikbaar van maandag tot en met vrijdag van 08.00 tot 18.00 uur."),
+          label: i18n.t('lukt-het-niet-om-een-melding-te-doen-bel-het-telef'),
+          value: i18n.t('wij-zijn-bereikbaar-van-maandag-tot-en-met-vrijdag'),
         },
-        render: FormComponents.PlainText,
+        render: FormComponents.PlainText
       },
     },
   },
