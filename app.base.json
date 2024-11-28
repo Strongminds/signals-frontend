@@ -152,8 +152,8 @@
       }
   },
   "oidc": {
-      "authEndpoint": "http://localhost:5556/auth",
-      "clientId": "signals",
+      "authEndpoint": "https://eu-west-1hepqer09o.auth.eu-west-1.amazoncognito.com/oauth2/authorize",
+      "clientId": "1e62jf9du06ccq04sh80djse1i",
       "responseType": "id_token",
       "scope": "openid email profile"
   },
