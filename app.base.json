@@ -1,5 +1,5 @@
 {
-  "apiBaseUrl": "https://api.signalen.dev.os2.strongminds.dk",
+  "apiBaseUrl": "http://localhost:8000",
   "areaTypeCodeForDistrict": "district",
   "featureFlags": {
       "appMode": false,
