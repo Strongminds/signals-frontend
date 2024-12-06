@@ -246,8 +246,7 @@ const Attachments: FC<AttachmentsProps> = ({
                       data-testid={'DeleteIcon' + attachment.created_at}
                       onClick={(event) => {
                         event.stopPropagation()
-                        window.confirm(
-                          `Weet je zeker dat je de bijlage '${fileName}' wilt verwijderen?`
+                        window.confirm(i18n.t('weet-je-zeker-dat-je-de-bijlage') + ` '${fileName}' `
                         ) && remove(attachment)
                         setSelectedEditAttachment(null)
                       }}
